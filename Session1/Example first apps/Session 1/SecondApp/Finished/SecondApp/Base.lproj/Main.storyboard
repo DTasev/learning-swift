@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X9m-FM-UTx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Three Choices-->
+        <scene sceneID="t66-0x-aJ5">
+            <objects>
+                <tableViewController title="Three Choices" id="yd2-8I-P9n" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="qpu-pj-sdP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="Zjv-y9-FWx">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ClG-WU-STY" style="IBUITableViewCellStyleDefault" id="PzP-mr-s04">
+                                        <rect key="frame" x="0.0" y="99" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PzP-mr-s04" id="4qf-Z3-ylH">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Try Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ClG-WU-STY">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="6wL-IY-A2L" kind="show" id="ozo-Ij-NHj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="SWu-A8-wYj" style="IBUITableViewCellStyleDefault" id="FG4-bF-qtd">
+                                        <rect key="frame" x="0.0" y="143" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FG4-bF-qtd" id="v0J-Pw-aFk">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Try Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SWu-A8-wYj">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="eUR-qy-t8B" kind="show" id="FUs-iY-opg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ka6-2y-blZ" style="IBUITableViewCellStyleDefault" id="Mco-8M-rEW">
+                                        <rect key="frame" x="0.0" y="187" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mco-8M-rEW" id="KJE-sH-G8s">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Try Map (not really) " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ka6-2y-blZ">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="x8p-kG-sxH" kind="show" id="g2O-Yh-6Yx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="yd2-8I-P9n" id="IzQ-IE-3oM"/>
+                            <outlet property="delegate" destination="yd2-8I-P9n" id="gSt-oQ-mAO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Second App" id="he4-GW-JRo"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QcR-TC-EuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1208" y="68"/>
+        </scene>
+        <!--About Aber Comp Sci-->
+        <scene sceneID="e2v-IL-ATs">
+            <objects>
+                <viewController title="About Aber Comp Sci" id="6wL-IY-A2L" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QGr-nS-brO"/>
+                        <viewControllerLayoutGuide type="bottom" id="k7c-Ah-uMV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gIc-v2-aDa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxd-6Y-t08">
+                                <rect key="frame" x="20" y="84" width="560" height="496"/>
+                                <string key="text">Aberystwyth University celebrates excellence in teaching 
+ 
+iCub team wins UK science photography prize for second year running
+ 
+Aberystwyth lecturer voted tenth most influential woman in computing
+ 
+Aberystwyth Computer Science Department is 11th in the UK and 1st in Wales.</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xxd-6Y-t08" firstAttribute="trailing" secondItem="gIc-v2-aDa" secondAttribute="trailingMargin" id="QI3-94-nLm"/>
+                            <constraint firstItem="xxd-6Y-t08" firstAttribute="top" secondItem="QGr-nS-brO" secondAttribute="bottom" constant="20" id="her-5I-U5u"/>
+                            <constraint firstItem="xxd-6Y-t08" firstAttribute="leading" secondItem="gIc-v2-aDa" secondAttribute="leadingMargin" id="rSh-gd-spz"/>
+                            <constraint firstItem="k7c-Ah-uMV" firstAttribute="top" secondItem="xxd-6Y-t08" secondAttribute="bottom" constant="20" id="scN-ob-4Ue"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afB-1b-n9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1904" y="15"/>
+        </scene>
+        <!--Map of Aber-->
+        <scene sceneID="uKP-Vb-Jct">
+            <objects>
+                <viewController title="Map of Aber" id="x8p-kG-sxH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8TT-9B-bZc"/>
+                        <viewControllerLayoutGuide type="bottom" id="hGq-Na-dhY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LkB-kZ-JjY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abermap" translatesAutoresizingMaskIntoConstraints="NO" id="280-cy-eT2">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Cf-3f-zss" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1390" y="1149"/>
+        </scene>
+        <!--Aber Comp Sci-->
+        <scene sceneID="tSz-zh-TxP">
+            <objects>
+                <viewController title="Aber Comp Sci" id="eUR-qy-t8B" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EVQ-KE-xvO"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Pr-4n-u97"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WgE-62-GqM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="AberCompSci" translatesAutoresizingMaskIntoConstraints="NO" id="ek3-ug-Gjd">
+                                <rect key="frame" x="0.0" y="145" width="600" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ek3-ug-Gjd" secondAttribute="height" multiplier="300:187" id="ucf-LZ-1rC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31063450640000001" green="0.61969250440000001" blue="0.26925066110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ek3-ug-Gjd" firstAttribute="leading" secondItem="WgE-62-GqM" secondAttribute="leading" id="L1u-vD-OfH"/>
+                            <constraint firstAttribute="trailing" secondItem="ek3-ug-Gjd" secondAttribute="trailing" id="YfS-7J-eVU"/>
+                            <constraint firstItem="ek3-ug-Gjd" firstAttribute="centerY" secondItem="WgE-62-GqM" secondAttribute="centerY" id="nxC-ct-GIe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZQ-Le-qqS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1817" y="726"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="22A-up-VCS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X9m-FM-UTx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rKM-xh-vDq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yd2-8I-P9n" kind="relationship" relationship="rootViewController" id="jtn-CO-689"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HkZ-EM-pXS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="384" y="392"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AberCompSci" width="1024" height="683"/>
+        <image name="abermap" width="566" height="661"/>
+    </resources>
+</document>

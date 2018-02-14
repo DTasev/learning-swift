@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Shakey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VQY-58-4VA">
+                                <rect key="frame" x="186" y="185" width="228" height="230"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="six.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="v0w-34-G2V">
+                                        <rect key="frame" x="79" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="9Bw-Vv-pdE"/>
+                                            <constraint firstAttribute="height" constant="70" id="k0U-33-5DD"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="oVV-a9-Vc9">
+                                        <rect key="frame" x="0.0" y="80" width="228" height="70"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="five.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PJC-eC-cGL">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="J9k-Mk-Way"/>
+                                                    <constraint firstAttribute="height" constant="70" id="Z57-kl-iSQ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="four.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eaz-Ze-qN5">
+                                                <rect key="frame" x="79" y="0.0" width="70" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="HDu-hB-Hqd"/>
+                                                    <constraint firstAttribute="width" constant="70" id="Q0f-bg-1A7"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="three.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="n0L-gG-xaq">
+                                                <rect key="frame" x="158" y="0.0" width="70" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="C9e-of-dLp"/>
+                                                    <constraint firstAttribute="width" constant="70" id="NIi-Vc-KnQ"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="two.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ale-gp-ckg">
+                                        <rect key="frame" x="79" y="160" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="U4g-a5-9NP"/>
+                                            <constraint firstAttribute="width" constant="70" id="wLh-J5-emP"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="1my-07-Eso"/>
+                                    <constraint firstItem="oVV-a9-Vc9" firstAttribute="centerY" secondItem="VQY-58-4VA" secondAttribute="centerY" id="lJJ-gl-hyv"/>
+                                    <constraint firstAttribute="width" constant="228" id="qO2-mp-Enl"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sc-CW-VoL">
+                                <rect key="frame" x="166" y="505" width="268" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="fGe-hw-1HT"/>
+                                    <constraint firstAttribute="width" constant="268" id="hab-fd-OnA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Shake, baby, shake!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doTheShake:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fna-se-Qrq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="VQY-58-4VA" firstAttribute="centerX" secondItem="7sc-CW-VoL" secondAttribute="centerX" id="3gq-Eq-RNr"/>
+                            <constraint firstItem="VQY-58-4VA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GCe-yx-Uu9"/>
+                            <constraint firstItem="7sc-CW-VoL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZGj-i1-9hb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7sc-CW-VoL" secondAttribute="bottom" constant="15" id="ZhJ-PA-2cs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="diceBottom" destination="Ale-gp-ckg" id="2h7-be-WP4"/>
+                        <outlet property="diceLeft" destination="PJC-eC-cGL" id="pVH-py-Y7O"/>
+                        <outlet property="diceMiddle" destination="eaz-Ze-qN5" id="1rn-0k-P7l"/>
+                        <outlet property="diceRight" destination="n0L-gG-xaq" id="L2D-g4-WK2"/>
+                        <outlet property="diceTop" destination="v0w-34-G2V" id="hJh-1r-7Uz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479" y="308"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="five.jpg" width="33" height="33"/>
+        <image name="four.jpg" width="33" height="33"/>
+        <image name="six.jpg" width="33" height="33"/>
+        <image name="three.jpg" width="33" height="33"/>
+        <image name="two.jpg" width="33" height="33"/>
+    </resources>
+</document>

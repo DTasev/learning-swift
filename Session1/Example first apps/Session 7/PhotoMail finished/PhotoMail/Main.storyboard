@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoMail" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w4I-CB-qwR">
+                                <rect key="frame" x="0.0" y="50" width="600" height="375"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZO7-XU-XPQ">
+                                <rect key="frame" x="0.0" y="514" width="189" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="IqO-9S-ZqJ"/>
+                                    <constraint firstAttribute="width" constant="189" id="jAL-el-uPi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Take Pic"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9dU-H5-qbA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LId-FR-eSL">
+                                <rect key="frame" x="411" y="514" width="189" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Ffe-Qs-rDt"/>
+                                    <constraint firstAttribute="width" constant="189" id="xSN-q0-Dk5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Mail Photo"/>
+                                <connections>
+                                    <action selector="mailPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5KY-Cz-qGm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w4I-CB-qwR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="04G-4G-OtP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="w4I-CB-qwR" secondAttribute="bottom" constant="175" id="BPN-DJ-ud8"/>
+                            <constraint firstAttribute="trailing" secondItem="w4I-CB-qwR" secondAttribute="trailing" id="ByD-3U-gT8"/>
+                            <constraint firstItem="ZO7-XU-XPQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Fl1-rw-uAT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LId-FR-eSL" secondAttribute="bottom" constant="30" id="R0v-N7-dmo"/>
+                            <constraint firstItem="w4I-CB-qwR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="icS-5t-ULx"/>
+                            <constraint firstAttribute="trailing" secondItem="LId-FR-eSL" secondAttribute="trailing" id="rG6-ia-IcI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZO7-XU-XPQ" secondAttribute="bottom" constant="30" id="rM9-rf-KXX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mailButton" destination="LId-FR-eSL" id="uye-Xi-99y"/>
+                        <outlet property="photo" destination="w4I-CB-qwR" id="aHD-3W-KCF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="350"/>
+        </scene>
+    </scenes>
+</document>
